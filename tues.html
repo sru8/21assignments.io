@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./tues.css">
+    </head>
+    
+    <form name="form1" class="calci" action="calculator" method="post"></form>
+    <input type="text" name="ans" id="display">
+    <br>
+    <br>
+    <input type="button" class="btdesign" value="C" onclick="form1.ans.value">
+    <input type="button" class="btdesign" value="<" onclick="form1.ans.value=form1.ans.value.substring(0,form1.ans.value.length*1-1)">
+    <input type="button" class="btdesign" value="00" onclick="form1.ans.value+='00'">
+    <input type="button" class="btdesign" value="/" onclick="form1.ans.value+='/'">
+<br>
+<br>
+    <input type="button" class="btdesign" value="7" onclick="form1.ans.value+='7'">
+    <input type="button" class="btdesign" value="8" onclick="form1.ans.value+='8'">
+    <input type="button" class="btdesign" value="9" onclick="form1.ans.value+='9'">
+    <input type="button" class="btdesign" value="*" onclick="form1.ans.value+='*'">
+<br>
+<br>
+    <input type="button" class="btdesign" value="4" onclick="form1.ans.value+='4'">
+    <input type="button" class="btdesign" value="5" onclick="form1.ans.value+='5'">
+    <input type="button" class="btdesign" value="6" onclick="form1.ans.value+='6'">
+    <input type="button" class="btdesign" value="-" onclick="form1.ans.value+='-'">
+<br>
+<br>
+    <input type="button" class="btdesign" value="1" onclick="form1.ans.value+='1'">
+    <input type="button" class="btdesign" value="2" onclick="form1.ans.value+='2'">
+    <input type="button" class="btdesign" value="3" onclick="form1.ans.value+='3'">
+    <input type="button" class="btdesign" value="+" onclick="form1.ans.value+='+'">
+<br>
+<br>
+    <input type="button" class="btdesign" value="0" onclick="form1.ans.value">
+    <input type="button" class="btdesign" value="." onclick="form1.ans.value">
+    <input type="button" class="btdesign" value="=" onclick="form1.ans.value">
+    
+</html>

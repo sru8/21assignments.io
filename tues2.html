@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./tues2.css">
+        <title> rock paper scissors </title>
+
+    </head>
+    <body style="background-color: rgb(128, 43, 226);">
+        <div class="container">
+            <div>
+                <div>
+                    <button onclick="game(0)">ROCK </button>
+                    <button onclick="game(1)">PAPER </button>
+                    <button onclick="game(2)">SCISSORS </button>
+                </div>
+                <h1 id="computer">COMPUTER </h1>
+            </div>
+            <div>
+                <p class="me"> Me: <span id="me_score">0</span></p>
+                <p class="comp"> Computer : <span id="comp_score">0</span></p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var me =0;
+            var comp =0;
+            function game(x) { 
+            var list = ["rock","paper","scissors"];
+            var comp_value = Math.floor(Math.random()*3);
+            document.getElementById('computer').innerHTML = list[comp_value];
+
+            ( x == comp_value ) ? "":"";
+
+            (x == 0 && comp_value == 1 ) ? comp++ : "";
+            (x == 0 && comp_value == 2 ) ? me++ : "";
+
+            (x == 1 && comp_value == 0 ) ? comp++ : "";
+            (x == 1 && comp_value == 2 ) ? me++ : "";
+
+            (x == 2 && comp_value == 0 ) ? comp++ : "";
+            (x == 2 && comp_value == 1 ) ? me++ : "";
+
+            document.getElementById('me_score').innerHTML = me;
+            document.getElementById('comp_score').innerHTML = comp;
+
+            }
+
+        </script>
+    </body>
+</html>

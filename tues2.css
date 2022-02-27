@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(red, rgb(117, 0, 128), blue);
+}
+
+
+
+* {
+    
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+width: 480px;
+margin: auto;
+padding-top: 120px;
+}
+
+.screen {
+    display: flex;
+}
+
+.buttons, #computer {
+    margin: 2px;
+    flex-basis: 50%;
+    height: 210px;
+    background-color: rgb(red, green, rgb(183, 0, 255));
+}
+button {
+    font-size: 18px;
+    padding: 8px;
+}
+button:focus {
+    font-weight: bold;
+}
+.comp {
+    float: right;
+}
